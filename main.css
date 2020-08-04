@@ -1,0 +1,13 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+@font-face{
+    font: 'Roboto';
+    src: url('../fonts/Roboto_regular.ttf');
+format: ('trutype')
+font-weight: 400;
+}
+.container {o
+    max-width: 1030px;
+    margin: 0 auto;
+}
