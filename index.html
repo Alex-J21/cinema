@@ -3,8 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack Boilerplate</title>
 
@@ -17,24 +15,50 @@
             <div>
                 <div style="float: left; margin-right: 20px; background-color: black;">
                     <a href="http://university.innopolis.ru" target="_blank" title="Сайт Иннополиса">
-                        <img src="img/logo.png" alt="Логотип"></a>
+                        <img src="img/logo.png" alt="Логотип">
+                    </a>
                 </div>
                 <div style="float: left; margin-right: 20px;">
-                    <nav> <a href="#">ЗАКАЗАТЬ БИЛЕТ</a> | <a href="#">ПРЕИМУЩЕСТВА</a> | <a href="#">ФИЛЬМЫ</a> | <a href="#">КОНТАКТЫ</a> </nav>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#order_tiket">
+                                    ЗАКАЗАТЬ БИЛЕТ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#whai">
+                                    ПРЕИМУЩЕСТВА
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#film">
+                                    ФИЛЬМЫ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    КОНТАКТЫ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div>
                     <span>Ваш город:</span> <a href="#">Москва</a>
                 </div>
         </header>
-        <br>
-        <br>
-        <br>
-        <br>
-        <img width="400" src="img/top_bg.jpg" alt="Задний фон" title="кинозал">
         <section>
             <div>
-                <h1>Закажите билет в кино</h1>
-                <h2>Всем покупателям подарок!</h2>
+                <h1 id="order_tiket">
+                    Закажите билет в 
+                    <span>
+                        кино
+                    </span>
+                </h1>
+                <b>
+                    Всем покупателям подарок!
+                </b>
             </div>
         </section>
     </div>
@@ -42,119 +66,71 @@
     <!---второя часть--->
     <div>
         <div>
-            <h3>Добро пожаловать!</h3>
+            <h2>
+                Добро пожаловать!
+            </h2>
         </div>
         <div>
-            <h3>Почему мы?</h3>
+            <b id="whai">
+                Почему мы?
+            </b>
             <p>
                 Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis
                 quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
-            </p>
-            <p>
+                <br>
                 Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis
                 quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
             </p>
         </div>
         <div>
-            <table>
-                <thead>
-                    <tr>
-                        <td>
-                            <img src="img/b2_icon_1.jpg" alt="Логотип 2" title="Экраны">
-                            <h4>Большие экраны</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum
-                                eius error
-                                expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora
-                                temporibus
-                                veritatis vero voluptates.
-                            </p>
-                        </td>
-                </thead>
-                <tbody>
-                    <td>
-                        <img src="img/b2_icon_2.jpg" alt="Логотип 3" title="Звук">
-                        <h4>Объемный звук</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet.
-                        </p>
-                    </td>
-                </tbody>
-                <tfoot>
-                    <td>
-                        <img src="img/b2_icon_3.jpg" alt="Логотип 4" title="Кресла">
-                        <h4>Удобные кресла</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius
-                            error
-                            expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora
-                            temporibus
-                            veritatis vero voluptates.
-                        </p>
-                    </td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div>
+                <img src="img/b2_icon_1.jpg" alt="Логотип 2" title="экраны">
+                <b>
+                    Большие экраны
+                </b>
+                <i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error
+                    expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus
+                    veritatis vero voluptates.
+                </i>
+            </div>
+            <div>
+                <img src="img/b2_icon_2.jpg" alt="Логотип 3" title="звук">
+                <b>
+                    Объемный звук
+                </b>
+                <i>
+                    Lorem ipsum dolor sit amet.
+                </i>
+            </div>
+            <div>
+                <img src="img/b2_icon_3.jpg" alt="Логотип 4" title="Кресло">
+                <b>
+                    Удобные кресла
+                </b>
+                <i>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error
+                    expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus
+                    veritatis vero voluptates.
+                </i>
+            </div>
         </div>
     </div>
     <!---третья--->
     <div>
         <div>
-            <!--- <style>
-                th, td {
-                    border: 1px solid black;
-                    padding: 5px 10px;
-                } 
-            </style>-->
-            <section>
-                <div class="container">
-                    <div class="movie-list">
-                    <h2 class="movie-list__header">Выберите фильм</h2>
-                    <table class="movie-list__table">
-                    </table>
-                    </div>
-                    <br>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Time</th>
-                                <th>Stuff that will happen</th>
-                                <th>Кнопка</th>
-                                <!--th>Жанр</th>-->
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>10am - 12pm</td>
-                                <td>Introduction and presentations about Envato</td>
-                                <!--td>фантастика, боевик, приключения</td> 
-                                    <td>check</td> -->
-                                <td>check</td>
-                            </tr>
-                            <tr>
-                                <td>12pm - 02pm</td>
-                                <td>Sessions by honorable guests and Speakers</td>
-                                <!--td><a href="https://www.kinopoisk.ru/film/1122114/" target="_blank" title="Кинопоиск">Собачья жизнь 2</a></td> -->
-                                <td>check</td>
-                            </tr>
-                            <tr>
-                                <td>02pm - 03pm</td>
-                                <td>Break and Mingle time with the authors</td>
-                                <!--td><a href="https://www.kinopoisk.ru/film/846824/" target="_blank" title="Кинопоиск">История игрушек 4</a></td> -->
-                                <td>check</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>03pm - 05pm</td>
-                                <td>16:00</td>
-                                <!--td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank" title="Кинопоиск">Люди в черном: Интернэшнл</a></td> -->
-                                <td>check</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </section>
+            <h3>Выберите фильм</h3>
+            <p>Начало сеанса Название фильма Жанр</p>
+            <p>
+                10:00 <a href="https://www.kinopoisk.ru/film/1008445/" target="_blank"
+                    title="Кинопоиск">Человек-паук</a> фантастика, боевик, приключения<br />
+                12:00 <a href="https://www.kinopoisk.ru/film/1122114/" target="_blank" title="Кинопоиск">Собачья жизнь
+                    2</a> фэнтези, драма, комедия<br />
+                14:00 <a href="https://www.kinopoisk.ru/film/846824/" target="_blank" title="Кинопоиск">История игрушек
+                    4</a> мультфильм, фэнтези, комедия<br />
+                16:00 <a href="https://www.kinopoisk.ru/film/693730/" target="_blank" title="Кинопоиск">Люди в черном:
+                    Интернэшнл</a> фантастика, боевик, комедия<br />
+            </p>
         </div>
         <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
@@ -163,9 +139,9 @@
         </div>
     </div>
     <div>
-        <img src="img/b4_img.jpg" alt="Лого4" title="Подарок">
+        <img src="img/b4_img.jpg" title="подарок">
         <div>
-            <b>Подарок каждому!</b>
+            <h4>Подарок каждому!</h4>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate
                 excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi
@@ -181,138 +157,26 @@
                 sint, tenetur unde velit veniam!
             </p>
         </div>
-        <span>Получить подарок</span>
+        <p>Получить подарок</p>
     </div>
     <!--четрвертая-->
     <div>
-        <b>Фильмы</b>
+        <h5 id="film">Фильмы</h5>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum,
             laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
         </p>
-        <table>
-            <thead>
-                <tr>
-                    <td>
-                        <img src="img/mov1.jpg" alt="Человек-Паук" title="Человек паук">
-                    </td>
-                    <td>
-                        <img src="img/mov2.jpg" alt="Собачья жизнь 2" title="Собачья жизнь ">
-                    </td>
-                    <td>
-                        <img src="img/mov3.jpg" alt="Люди в черном: Интернэшнл" title="Люди в черном">
-                    </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <img src="img/mov1.jpg" alt="Человек-Паук" title="Человек паук">
-                    </td>
-                    <td>
-                        <img src="img/mov2.jpg" alt="Собачья жизнь 2" title="Собачья жизнь ">
-                    </td>
-                    <td>
-                        <img src="img/mov3.jpg" alt="Люди в черном: Интернэшнл" title="Люди в черном">
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>
-                        <img src="img/mov1.jpg" alt="Человек-Паук" title="Человек паук">
-                    </td>
-                    <td>
-                        <img src="img/mov2.jpg" alt="Собачья жизнь 2" title="Собачья жизнь ">
-                    </td>
-                    <td>
-                        <img src="img/mov3.jpg" alt="Люди в черном: Интернэшнл" title="Люди в черном">
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
-        <br>
         <div>
-            <img src="img/1920x450.png" alt="map" title="карта">
-        </div>
-        <br>
-        <br>
-        <br>
-        <table>
-            <thead>
-                <tr>
-                    <td>
-                        <a href="https://www.facebook.com/" target="_blank" title="мы в facebook" name="facebook">
-                            <P>facebook</P>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://twitter.com/" target="_blank" title="мы в twitter" name="twitter">
-                            <p>twitter</p>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="http://instagram.com/" target="_blank" title="мы в instagram" name="instagram">
-                            <p>instagram</p>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://myaccount.google.com/" target="_blank" title="мы в google+" name="google">
-                            <p>google</p>
-                        </a>
-                    </td>
-                </tr>
-            </thead>
-        </table>
-
-        <div style="float: left; margin-right: 20px; background-color: #5CFF5C;">
+            <img src="img/mov1.jpg" alt="Человек-Паук" title="Человек Паук">
         </div>
         <div>
-            <form action="order.php">
-                <div>
-                    <input type="email" placeholder="Введите Email" id="" required title="Ввести email"
-                        name="Ввод электронной почты">
-                </div>
-                <div>
-                    <input type="text" placeholder="Имя*" required title="Ввести login" name="Ввод логина">
-                </div>
-                <div>
-                    <select name="some" id="" required="" title="Выбрать вариант">
-                        <option value="1">Выбор 1</option>
-                        <option value="2">Выбор 2</option>
-                        <option value="3">Выбор 3</option>
-                        <option value="4">Выбор 4</option>
-                        <option value="5">Выбор 5</option>
-                        <option value="6">Выбор 6</option>
-                        <option value="7">Выбор 7</option>
-                        <option value="8">Выбор 8</option>
-                        <option value="9">Выбор 9</option>
-                        <option value="10">Выбор 10</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="" required title="Выбор" name="Выбрать вариант">выбери вариант</label>
-                    <input id="" type="radio" name="radio">
-                    <input id="" type="radio" name="radio">
-                </div>
-                <div>
-                    <textarea placeholder="Оставить комментарий к заказу" required name="оставить комментарий"
-                        title="Комментаий к заказу" maxlength="500"></textarea>
-                </div>
-                <div>
-                    <label for="rules" required>Согласие на оброботку персональных данных</label>
-                    <input id="rules" type="checkbox" required title="Согласие на обработку персональных данных"
-                        name="Согласие на обработку">
-                </div>
-                <div>
-                    <input type="file" required name="закгрузка файлов" title="Выбрать файл">
-                </div>
-                <div>
-                    <input type="submit" value="Заказать" name="Кнопка заказа" title="Заказать">
-                </div>
-            </form>
+            <img src="mov2.jpg" alt="Собачья жизнь 2" title="Собачья жизнь ">
+        </div>
+        <div>
+            <img src="img/mov3.jpg" alt="Люди в черном: Интернэшнл" title="Люди в черном">
         </div>
     </div>
-    <footer></footer>
+        <footer></footer>
 </body>
+
 </html>
