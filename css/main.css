@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
 
 }
@@ -137,71 +137,84 @@ body{
     font-weight: 100;
     font-style: normal;
 }
+
 /* Общие стили*/
-.container{
+.container {
+    word-wrap: break-word;
     font-size: 14px;
-font-weight: 100;
-color: #777777;
-list-style-type: none; /*Убирает маркеры перед абзацем*/
+    font-weight: 100;
+    color: #777777;
+    list-style-type: none; /*Убирает маркеры перед абзацем*/
 }
-a{
-    text-decoration: none; /*убрать подчеркивание у ссылок*/
+
+a {
+    text-decoration: none;
+    /*убрать подчеркивание у ссылок*/
 }
+
 /** Сетка макета */
-.container{
+.container {
     max-width: 1920px;
     min-width: 320px;
     margin: 0 auto;
     padding: 0;
 }
+
 /*Первый блок*/
-.container1__header{
+.container1__header {
     background: url("../img/top_bg.jpg") no-repeat top center / cover;
     min-height: 100vh;
     color: #d3d3d3;
     font-size: 15px;
 
 }
-.container1__logo{
+
+.container1__logo {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 15px;
     height: 30px;
 }
 
-.container1__chapter_thin{
+.container1__chapter_thin {
     font-size: 80px;
     font-weight: 100;
     text-align: center;
     color: #d3d3d3;
 }
-.container1__chapter_regular{
+
+.container1__chapter_regular {
     font-size: 50px;
     padding-top: 10px;
     font-weight: 400;
     text-align: center;
     color: #d3d3d3;
 }
-.container1__nav{
+
+.container1__nav {
     margin-left: 500px;
 }
+
 .container1__nav li {
     display: inline-block;
 }
-.container1__nav li+li{
+
+.container1__nav li+li {
     margin-left: 44px;
 }
-.container1__nav a{
+
+.container1__nav a {
     color: #d3d3d3;
     text-transform: uppercase;
     transition: 0.2s;
 }
-.container1__nav a:hover{
+
+.container1__nav a:hover {
     color: #90d23d;
     cursor: pointer;
 }
 
-.container1__chapter{
+.container1__chapter {
     padding: 180px 0 360px;
 }
 
@@ -212,64 +225,45 @@ a{
 
 
 /*Второй блок*/
-.container2 div {
-    display: inline-block;
-}
-.container2{
-    
+
+.container2 {
+    max-width: 1035px;
     font-size: 14px;
     font-weight: 300;
 }
-.container2__wellcome{
-position: absolute;
-    height: 267px;
-    width: 516px;
-    margin-inline: 15px;
-}
 
-.container2__head{
+.container2__head {
     font-size: 50px;
     font-weight: 700;
     color: #252525;
 }
 
-
-
 .container2 h2 {
     font-size: 40px;
     font-weight: 700;
+    color: #252525;
 }
 
 .container2 [id=whai] {
     font-size: 50px;
 }
 
-.container2__block b{
+.block__plus{
+
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.block__plus b {
     font-size: 35px;
     font-weight: 900;
+    color: #252525;
 }
-
-.container2__block-screen{
-    height: 160px;
-    width: 300px;
-    display: inline-block;
-    height: 160px;
-    width: 300px;
-    margin: 35px;
+.container2__block{
+    overflow: hidden;
+    margin: 0 -15px;
 }
-.container2__block-sound{
-    display: inline-block;
-    height: 160px;
-    width: 300px;
-    margin: 35px;
-}
-.container2__block-armchair{
-    display: inline-block;
-    height: 160px;
-    width: 300px;
-    margin: 35px;
-}
-
 
 
 
@@ -289,7 +283,7 @@ position: absolute;
 }
 
 
-.movie-list__header{
+.movie-list__header {
     text-align: center;
     color: #252252;
     font-size: 50px;
@@ -307,7 +301,8 @@ position: absolute;
     height: 75px;
 }
 
-.movie-table td, .movie-table th{
+.movie-table td,
+.movie-table th {
     padding: 16px;
 }
 
@@ -324,17 +319,17 @@ position: absolute;
     font-weight: 400;
 }
 
-.movie-table .movie-row a{
-        color: #f5f5f5;
-        text-decoration: none;
+.movie-table .movie-row a {
+    color: #f5f5f5;
+    text-decoration: none;
 }
 
-.movie-table .movie-row:nth-child(odd){
+.movie-table .movie-row:nth-child(odd) {
     background: #373737;
 
 }
 
-table.movie-table tfoot td{
+table.movie-table tfoot td {
     color: black;
     padding: 39px;
     padding-left: 99px;
@@ -342,24 +337,26 @@ table.movie-table tfoot td{
     padding-right: 99px;
 }
 
-.movie-table .movie-row:last-child td:first-child{
+.movie-table .movie-row:last-child td:first-child {
     border-bottom-left-radius: 15px;
 }
-.movie-table .movie-row:last-child td:last-child{
+
+.movie-table .movie-row:last-child td:last-child {
     border-bottom-right-radius: 15px;
 }
 
-.container4{
-    float:left;
-    margin: 7px 7px 7px 0; 
+.container4 {
+    float: left;
+    margin: 7px 7px 7px 0;
     background: url("../img/b4_bg.jpg") no-repeat top center / cover;
     min-height: 100vh;
 
 }
 
-.left{
+.left {
     text-align: left;
 }
+
 .Rounded_Rectangle_4 {
     text-align: center;
     border-radius: 15px;
