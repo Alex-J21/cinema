@@ -146,15 +146,14 @@ body {
 
 /* Сетка макета */
 .container {
-    max-width: 1920px;
+    max-width: 1060px;
     margin: 0 auto;
     padding: 0;
     list-style-type: none; /*Убирает маркеры перед абзацем*/
-    position: relative;
 }
 /** Общие стили*/
 .style-text{
-    font-size: 14px;
+    font-size: 0.7rem;
     font-weight: 100;
     color: #3e3e3e;
 }
@@ -167,24 +166,25 @@ a {
     /*убрать подчеркивание у ссылок*/
 }
 .padding-text{
-    padding: 0 0 15px;
+    padding: 0 0 0.75rem;
 }
-
+html{
+    font-size: 20px;
+}
 
 /*Первый блок*/
 .block1 {
     background: url("../img/top_bg.jpg") no-repeat top center / cover;
     position: static;
-    min-height: 70vh;
+    min-height: 100vh;
     color: #d3d3d3;
-    font-size: 15px;
+    font-size: 0.75rem;
     position: relative;
     overflow: hidden;
 }
 
 .block1__header {
 padding-top: 54px;
-margin-left: 407px;
 }
 
 .block1__nav li {
@@ -199,7 +199,7 @@ margin-left: 407px;
 }
 .block1__img{
     display: inline-block;
-    float: left;
+
     margin-right: 262px;
 }
 
@@ -223,13 +223,13 @@ margin-left: 407px;
     padding: 195px 0 360px;
 }
 .block1__chapter_thin {
-    font-size: 80px;
+    font-size: 4rem;
     font-weight: 100;
     color: #d3d3d3;
 }
 
 .block1__chapter_regular {
-    font-size: 50px;
+    font-size: 2.5rem;
     padding-top: 10px;
     font-weight: 400;
     text-align: center;
@@ -333,11 +333,6 @@ margin-left: 407px;
 transform: scale(1.07);
 }
 
-.advantage{
-
-}
-
-
 /* Тратья часть с выбором фильма из таблицы*/
 .block3 {
     max-width: 1030px;
@@ -433,13 +428,11 @@ table.movie-table tfoot td {
 }
 .block4__block{
     text-align: right;
-    width: 1442px;
     color: #ffffff;
     box-sizing: border-box;
 }
 .block4__text{
     padding-left: 1px;
-    padding: 0 0 0 740px;
 }
 
 .block4__head{
@@ -489,8 +482,7 @@ table.movie-table tfoot td {
     bottom: -85px;
 }
 /** Пятая часть*/
-.block5{
-    width: 965px; 
+.block5{ 
     margin: 0 auto;
 }
 .block5__header{
@@ -506,16 +498,16 @@ table.movie-table tfoot td {
     width: 100%;
     border-collapse: collapse;/*соединение границ таблицы*/
 }
-/*.block5__inner td{
-    border: 1px solid #252525;
-}*/
+
 .block5__relative{
     position: relative;
     border-radius: 15px;
     overflow: hidden;
 }
+
 .block5__movie{
     padding: 23px;
+    position: relative;
 }
 .block5__description{
     position: absolute;
@@ -544,6 +536,9 @@ table.movie-table tfoot td {
     margin: 10px ;
 }
 .block5__icon{
+    display: flex;
+    justify-content: space-between;
+    width: 151px;
     position: absolute;
     bottom: 24px;
     left: 24px;
@@ -552,6 +547,11 @@ table.movie-table tfoot td {
 .block5__relative:hover  .block5__description{
     transform: translateY(0);
     transition: 0.2s;
+}
+
+
+.block5__film_cover{
+    width: 100%;
 }
 
 .block6__map{
@@ -563,6 +563,7 @@ table.movie-table tfoot td {
 .block7{
     height: 220px;
     background-color: #90d23d;
+
 }
 .block7__block_icon{
     padding: 128px 0px 0px 22px;
