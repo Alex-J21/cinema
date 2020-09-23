@@ -145,7 +145,6 @@
         </div>
         <!---третья--->
         <div class="block3">
-            <div class="container">
                 <div class="block3__movie-list">
                     <h3 class="movie-list__header">Выберите фильм</h3>
                     <div>
@@ -154,32 +153,37 @@
                                 <tr class="movie-table_head">
                                     <th>Начало сеанса ▲</th>
                                     <th class="left">Название фильма ▼</th>
+                                    <th>Жанр</th>
                                     <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="movie-row">
-                                    <td>10:00</td>
-                                    <td class="left"><a href="https://www.kinopoisk.ru/film/1008445/" class="href"
-                                            target="_blank">Человек-паук</a></td>
+                                    <td id="films_start_1"></td>
+                                    <td id="films_name_1" class="left"><a href="https://www.kinopoisk.ru/film/1008445/" class="href"
+                                            target="_blank"></a></td>
+                                    <td id="films_genre_1"></td>
                                     <td class="left"><img src="img/More icon.png" alt=""></td>
                                 </tr>
                                 <tr class="movie-row">
-                                    <td>12:00</td>
-                                    <td class="left"><a href="https://www.kinopoisk.ru/film/1122114/" class="href"
-                                            target="_blank">Собачья жизнь 2</a></td>
+                                    <td id="films_start_2"></td>
+                                    <td class="left" id="films_name_2"><a href="https://www.kinopoisk.ru/film/1122114/" class="href"
+                                            target="_blank"></a></td>
+                                            <td id="films_genre_2"></td>
                                     <td class="left"><img src="img/More icon.png" alt=""></td>
                                 </tr>
                                 <tr class="movie-row">
-                                    <td>14:00</td>
-                                    <td class="left"><a href="https://www.kinopoisk.ru/film/846824/" class="href"
-                                            target="_blank">Истоия игрушек 4</a></td>
+                                    <td id="films_start_3"></td>
+                                    <td class="left" id="films_name_3"><a href="https://www.kinopoisk.ru/film/846824/" class="href"
+                                            target="_blank"></a></td>
+                                            <td id="films_genre_3"></td>
                                     <td class="left"><img src="img/More icon.png" alt=""></td>
                                 </tr>
                                 <tr class="movie-row">
-                                    <td>16:00</td>
-                                    <td class="left"><a href="https://www.kinopoisk.ru/film/693730/" class="href"
-                                            target="_blank">Люди в черном:Интернэшнл</a></td>
+                                    <td id="films_start_4"></td>
+                                    <td class="left" id="films_name_4"><a href="https://www.kinopoisk.ru/film/693730/" class="href"
+                                            target="_blank"></a></td>
+                                            <td id="films_genre_4"></td>
                                     <td class="left"><img src="img/More icon.png" alt=""></td>
                                 </tr>
                             </tbody>
@@ -200,7 +204,6 @@
                             </tfoot>
                         </table>
                     </div>
-                </div>
             </div>
         </div>
         <!-- четвертая часть -->
@@ -239,7 +242,7 @@
                             cannot claim your prizes.
                         </p>
                     </div>
-                    <div>
+                    <div style="position: relative;">
                         <form action="">
                             <input type="submit" value="Подарок каждому!" name="Кнопка заказа" title="Заказать"
                                 class="Rounded_Rectangle_4">
@@ -471,29 +474,27 @@
                             </div>
                         </div>
             </div>
+            </div>
         </div>
         <div class="block6">
-            <div class="container">
                 <div class="block6__map">
-                    <a href="78798797898"><img src="https://via.placeholder.com/1920x450?text=Map-1920x450" alt=""></a>
-                </div>
+                    <a href="78798797898"><img src="https://via.placeholder.com/1920x450?text=1920x450" alt=""></a>
             </div>
         </div>
         <footer class="block7">
-            <div class="container">
                 <div class="block7__block_icon">
                     <div class="block7__icon"><img src="img/facebook_.jpg" alt=""></div>
                     <div class="block7__icon"><img src="img/twitter.jpg" alt=""></div>
                     <div class="block7__icon"><img src="img/linkedin.jpg" alt=""></div>
                     <div class="block7__icon"><img src="img/google plus_.jpg" alt=""></div>
                     <div class="block7__icon"><img src="img/tumblr.jpg" alt=""></div>
-                </div>
             </div>
         </footer>
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/plagin/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/films.js"></script>
 </body>
 
 </html>

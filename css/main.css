@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    min-width: 320px;
+    min-width: 16rem;
 }
 
 
@@ -137,16 +137,11 @@ body {
     font-weight: 100;
     font-style: normal;
 }
-/*.container {
-    
-    
-    margin: 0 auto;
-    padding: 0;
-}*/
+
 
 /* Сетка макета */
 .container {
-    max-width: 1060px;
+    max-width: 53rem;
     margin: 0 auto;
     padding: 0;
     list-style-type: none; /*Убирает маркеры перед абзацем*/
@@ -196,11 +191,11 @@ padding-top: 54px;
 }
 .block1__logo{
     box-sizing: border-box;
+    display: flex;
 }
 .block1__img{
     display: inline-block;
-
-    margin-right: 262px;
+    margin-right: 4rem;
 }
 
 .block1__nav a {
@@ -216,11 +211,11 @@ padding-top: 54px;
 }
 .block1__navigation{
     display: inline-block;
-    margin: 0 100px 0 0;
+    margin: 0 5rem 0 0;
 }
 
 .block1__chapter {
-    padding: 195px 0 360px;
+    padding: 9.75rem 0 18rem;
 }
 .block1__chapter_thin {
     font-size: 4rem;
@@ -261,7 +256,7 @@ padding-top: 54px;
 /*Второй блок*/
 
 .block2 {
-    font-size: 14px;
+    font-size: 0.75rem;
     font-weight: 300;
     margin-bottom: 152px;
     padding: 81px 0 0;
@@ -313,8 +308,6 @@ padding-top: 54px;
 
 .width{
     position: relative;
-    width: 1036px;
-    margin: 0 auto;
 }
 .block2__img-wrap{
     min-height: 211px;
@@ -335,7 +328,7 @@ transform: scale(1.07);
 
 /* Тратья часть с выбором фильма из таблицы*/
 .block3 {
-    max-width: 1030px;
+    width: 56rem;
     margin: 0 auto;
     margin-bottom: 38px;
 
@@ -408,9 +401,8 @@ table.movie-table tfoot td {
 
 .block4 {
     background: url("../img/b4_bg.jpg") no-repeat top center / cover;
-    min-height: 40vw;
+    min-height: 50vw;
     position: relative;
-    margin-bottom: 20px;
     overflow: hidden;
     margin-bottom: 130px;
 }
@@ -423,13 +415,13 @@ table.movie-table tfoot td {
     position: absolute;
     border-radius: 100%;
     overflow: hidden;
-    left: 424px;
     top: 29px;
 }
 .block4__block{
     text-align: right;
     color: #ffffff;
     box-sizing: border-box;
+    padding: 234px 0 0
 }
 .block4__text{
     padding-left: 1px;
@@ -438,7 +430,7 @@ table.movie-table tfoot td {
 .block4__head{
     font-size: 50px;
     font-weight: 900;
-    padding: 221px 0 60px;
+    padding: 0 0 60px;
 }
 .text4{
     font-size: 14px;
@@ -475,7 +467,7 @@ table.movie-table tfoot td {
     color: #ffffff;
     background-color: rgb(144, 210, 61);
     border-color: rgb(144, 210, 61);
-    left: 1219px;
+    right: 0;
     width: 220px;
     height: 55px;
     z-index: 83;
