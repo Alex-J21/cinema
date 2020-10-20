@@ -1,6 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     min-width: 16rem;
+    max-width: 1920px;
+    min-width: 320px;
 }
 
 
@@ -164,14 +166,14 @@ a {
     padding: 0 0 0.75rem;
 }
 html{
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 /*Первый блок*/
 .block1 {
     background: url("../img/top_bg.jpg") no-repeat top center / cover;
     position: static;
-    min-height: 100vh;
+    min-height: 114vh;
     color: #d3d3d3;
     font-size: 0.75rem;
     position: relative;
@@ -179,7 +181,7 @@ html{
 }
 
 .block1__header {
-padding-top: 54px;
+padding-top: 2.7rem;
 }
 
 .block1__nav li {
@@ -187,7 +189,7 @@ padding-top: 54px;
 }
 
 .block1__nav li+li {
-    margin-left: 44px;
+    margin-left: 2.2rem;
 }
 .block1__logo{
     box-sizing: border-box;
@@ -207,11 +209,11 @@ padding-top: 54px;
 .block1__nav a:hover {
     color: #90d23d;
     cursor: pointer;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 0.05rem solid #ffffff;
 }
 .block1__navigation{
     display: inline-block;
-    margin: 0 5rem 0 0;
+    margin: 0 3rem 0 0;
 }
 
 .block1__chapter {
@@ -225,7 +227,7 @@ padding-top: 54px;
 
 .block1__chapter_regular {
     font-size: 2.5rem;
-    padding-top: 10px;
+    padding-top: 0.5rem;
     font-weight: 400;
     text-align: center;
     color: #d3d3d3;
@@ -235,7 +237,7 @@ padding-top: 54px;
 }
 
 .stroka span{
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 0.05rem solid #ffffff;
 }
 .stroka a{
     color: #ffffff;
@@ -246,7 +248,7 @@ padding-top: 54px;
     display: block;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
+    border-top: 2.5rem solid transparent;
     border-right: 100vw solid #fff;
     left: 0; 
     bottom: 0;
@@ -258,59 +260,59 @@ padding-top: 54px;
 .block2 {
     font-size: 0.75rem;
     font-weight: 300;
-    margin-bottom: 152px;
-    padding: 81px 0 0;
+    margin-bottom: 7.6rem;
+    padding: 4.05rem 0 0;
 }
 .block2__wellcome{
     position: absolute;
     width: 43%;
-    top: -208px;
+    top: -10.4rem;
     right: 0;
     background-color: #ffffff;
-    padding: 35px 35px 60px;
-    box-shadow:  0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+    padding: 1.75rem 1.75rem 3rem;
+    box-shadow:  0px 0.05rem 0.1rem 0px rgba(35, 31, 32, 0.65);
 
     }
 .block2__head {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #252525;
 }
 
 .block2 h2 {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: 700;
     color: #252525;
-    margin: 0 0 20px;
+    margin: 0 0 1rem;
 }
 
 .block2 [id=whai] {
-    font-size: 50px;
+    font-size: 2.5rem;
 }
 
 .block__plus{
     box-sizing: border-box;
     float: left;
     width: 33.33%;
-    padding: 0 15px;
+    padding: 0 0.75rem;
 }
 
 .block__plus b {
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 900;
     color: #252525;
 }
 .block2__block{
-    padding: 148px 0 0;
+    padding: 7.4rem 0 0;
     overflow: hidden;
-    margin: 0 -30px 0;
+    margin: 0 -1.5rem 0;
 }
 
 .width{
     position: relative;
 }
 .block2__img-wrap{
-    min-height: 211px;
+    min-height: 10.55rem;
 }
 .block2__img-wrap img{
     max-width: 70%;
@@ -330,17 +332,17 @@ transform: scale(1.07);
 .block3 {
     width: 56rem;
     margin: 0 auto;
-    margin-bottom: 38px;
+    margin-bottom: 1.9rem;
 
 }
 
 .movie-list__header {
     text-align: center;
     color: #252252;
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin: 90px;
-    margin-bottom: 80px;
+    margin: 4.5rem;
+    margin-bottom: 4rem;
 }
 
 .movie-table {
@@ -348,26 +350,26 @@ transform: scale(1.07);
     color: #f5f5f5;
     width: 100%;
     border-collapse: collapse;
-    border-radius: 15px;
+    border-radius: 0.75rem;
     overflow: hidden;
-    height: 75px;
+    height: 3.75rem;
 }
 
 .movie-table td,
 .movie-table th {
-    padding: 21px;
+    padding: 1.05rem;
 }
 
 
 .movie-table .movie-table_head {
     background: #a3cc40;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 
 .movie-table .movie-row {
     background: #6c6c6c;
-    font-size: 22px;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -383,18 +385,18 @@ transform: scale(1.07);
 
 table.movie-table tfoot td {
     color: black;
-    padding: 39px;
-    padding-left: 99px;
-    font-size: 14px;
-    padding-right: 99px;
+    padding: 1.95rem;
+    padding-left: 4.95rem;
+    font-size: 0.7rem;
+    padding-right: 4.95rem;
 }
 
 .movie-table .movie-row:last-child td:first-child {
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 0.75rem;
 }
 
 .movie-table .movie-row:last-child td:last-child {
-    border-bottom-right-radius: 15px;
+    border-bottom-right-radius: 0.75rem;
 }
 
 /*Четвертая часть*/
@@ -404,7 +406,7 @@ table.movie-table tfoot td {
     min-height: 50vw;
     position: relative;
     overflow: hidden;
-    margin-bottom: 130px;
+    margin-bottom: 6.5rem;
 }
 
 .left {
@@ -415,25 +417,25 @@ table.movie-table tfoot td {
     position: absolute;
     border-radius: 100%;
     overflow: hidden;
-    top: 29px;
+    top: 1.45rem;
 }
 .block4__block{
     text-align: right;
     color: #ffffff;
     box-sizing: border-box;
-    padding: 234px 0 0
+    padding: 11.7rem 0 0
 }
 .block4__text{
-    padding-left: 1px;
+    padding-left: 0.05rem;
 }
 
 .block4__head{
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 900;
-    padding: 0 0 60px;
+    padding: 0 0 3rem;
 }
 .text4{
-    font-size: 14px;
+    font-size: 0.7rem;
     font-weight: 100;
 }
 .block4::after{
@@ -442,7 +444,7 @@ table.movie-table tfoot td {
     display: block;
     width: 0;
     height: 0;
-    border-top: 50px solid transparent;
+    border-top: 2.5rem solid transparent;
     border-right: 100vw solid #fff;
     left: 0; 
     bottom: 0;
@@ -453,7 +455,7 @@ table.movie-table tfoot td {
     display: block;
     width: 0;
     height: 0;
-    border-bottom: 100px solid transparent;
+    border-bottom: 5rem solid transparent;
     border-left: 100vw solid #ffffff;
     right: 0; 
     top: 0;
@@ -462,28 +464,28 @@ table.movie-table tfoot td {
 
 .Rounded_Rectangle_4 {
     text-align: center;
-    border-radius: 15px;
+    border-radius: 0.75rem;
     position: absolute;
     color: #ffffff;
     background-color: rgb(144, 210, 61);
     border-color: rgb(144, 210, 61);
     right: 0;
-    width: 220px;
-    height: 55px;
+    width: 11rem;
+    height: 2.75rem;
     z-index: 83;
-    bottom: -85px;
+    bottom: -4.25rem;
 }
 /** Пятая часть*/
 .block5{ 
     margin: 0 auto;
 }
 .block5__header{
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 700;
-    padding: 0 0 43px 0;
+    padding: 0 0 2.15rem 0;
 }
 .block5__text1{
-    padding: 0 0 56px 0;
+    padding: 0 0 2.8rem 0;
 }
 
 .block5__inner{
@@ -493,12 +495,12 @@ table.movie-table tfoot td {
 
 .block5__relative{
     position: relative;
-    border-radius: 15px;
+    border-radius: 0.75rem;
     overflow: hidden;
 }
 
 .block5__movie{
-    padding: 23px;
+    padding: 1.15rem;
     position: relative;
 }
 .block5__description{
@@ -508,32 +510,32 @@ table.movie-table tfoot td {
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 24px 24px 60px;
+    padding: 1.2rem 1.2rem 3rem;
     transform: translateY(100%);
 }
 .block5__film{
     color:#ffff;
-    font-size: 35px;
+    font-size: 1.75rem;
     font-weight: 900;
 }
 .block5__text{
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 500;
     color: #ffff;
 }
 .block5__sep{
-    width: 84px;
-    height: 6px;
+    width: 4.2rem;
+    height: 0.3rem;
     background: #ffff;
-    margin: 10px ;
+    margin: 0.5rem ;
 }
 .block5__icon{
     display: flex;
     justify-content: space-between;
-    width: 151px;
+    width: 7.55rem;
     position: absolute;
-    bottom: 24px;
-    left: 24px;
+    bottom: 1.2rem;
+    left: 1.2rem;
 }
 
 .block5__relative:hover  .block5__description{
@@ -553,13 +555,13 @@ table.movie-table tfoot td {
 }
 
 .block7{
-    height: 220px;
+    height: 11rem;
     background-color: #90d23d;
 
 }
 .block7__block_icon{
-    padding: 128px 0px 0px 22px;
-    width: 334px;
+    padding: 6.4rem 0px 0px 1.1rem;
+    width: 16.7rem;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -567,5 +569,43 @@ table.movie-table tfoot td {
     overflow: hidden;
     display: inline-block;
     border-radius: 100%;
-    margin: 0px 10px 0 0;
+    margin: 0px 0.5rem 0 0;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .7);
+}
+
+.hidden{
+    display: none;
+}
+
+.close{
+    color: black;
+    display: block;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.order-form{
+    background: rgb(255, 255, 255);
+    border-radius: 0.7rem;
+    box-shadow: 0.05rem 0px 0.25rem rgb(125, 125, 125);
+    box-sizing: border-box;
+    height: 18rem;
+    width: 21.5rem;
+    padding: 1rem;
+    margin: 7.5rem auto;
+    position: relative;
+}
+
+.popupCloseImg{
+    width: 21px;
+    height: 21px;
 }
