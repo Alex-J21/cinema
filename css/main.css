@@ -335,6 +335,9 @@ transform: scale(1.07);
     margin-bottom: 1.9rem;
 
 }
+.block03__checkbox {
+    display: none;
+}
 
 .movie-list__header {
     text-align: center;
@@ -345,7 +348,7 @@ transform: scale(1.07);
     margin-bottom: 4rem;
 }
 
-.movie-table {
+.movie-list__table {
     text-align: center;
     color: #f5f5f5;
     width: 100%;
@@ -355,35 +358,35 @@ transform: scale(1.07);
     height: 3.75rem;
 }
 
-.movie-table td,
-.movie-table th {
+.movie-list__table td,
+.movie-list__table th {
     padding: 1.05rem;
 }
 
 
-.movie-table .movie-table_head {
+.movie-list__table .movie-table_head {
     background: #a3cc40;
     font-size: 1.5rem;
     font-weight: 900;
 }
 
-.movie-table .movie-row {
+.movie-list__table .movie-row {
     background: #6c6c6c;
     font-size: 1.1rem;
     font-weight: 400;
 }
 
-.movie-table .movie-row a {
+.movie-list__table .movie-row a {
     color: #f5f5f5;
     text-decoration: none;
 }
 
-.movie-table .movie-row:nth-child(odd) {
+.movie-list__table .movie-row:nth-child(odd) {
     background: #373737;
 
 }
 
-table.movie-table tfoot td {
+table.movie-list__table tfoot td {
     color: black;
     padding: 1.95rem;
     padding-left: 4.95rem;
@@ -391,11 +394,11 @@ table.movie-table tfoot td {
     padding-right: 4.95rem;
 }
 
-.movie-table .movie-row:last-child td:first-child {
+.movie-list__table .movie-row:last-child td:first-child {
     border-bottom-left-radius: 0.75rem;
 }
 
-.movie-table .movie-row:last-child td:last-child {
+.movie-list__table .movie-row:last-child td:last-child {
     border-bottom-right-radius: 0.75rem;
 }
 
@@ -423,7 +426,7 @@ table.movie-table tfoot td {
     text-align: right;
     color: #ffffff;
     box-sizing: border-box;
-    padding: 11.7rem 0 0
+    padding: 16.7rem 0 0
 }
 .block4__text{
     padding-left: 0.05rem;
@@ -488,7 +491,8 @@ table.movie-table tfoot td {
     padding: 0 0 2.8rem 0;
 }
 
-.block5__inner{
+.block5__table{
+    display: flex;
     width: 100%;
     border-collapse: collapse;/*соединение границ таблицы*/
 }

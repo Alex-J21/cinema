@@ -1,61 +1,98 @@
-const genre = [
-        'фантастика',
-        'боевик',
-        'приключения',
-        'фэнтези',
-        'драма',
-        'комедия',
-        'мультфильм',
-        'комедия',
-        'фантастика',
-        'боевик'
-];
-
-/* const genre_1 = 'фантастика';
-const genre_2 = 'боевик';
-const genre_3 = 'приключения';
-const genre_4 = 'фэнтези';
-const genre_5 = 'драма';
-const genre_6 = 'комедия'
-const genre_7 = 'мультфильм';
-const genre_8 = 'комедия';
-const genre_9 = 'фантастика';
-const genre_10 = 'боевик' */
+const url = 'https://kinopoiskapiunofficial.tech/api/v2.1';
+const filmsElement = document.getElementsByClassName('block5__table')[0];
+const tableFilmsElement = document.getElementsByClassName('movie-list__table')[0];
 
 const films = [
-    {
-        start: '10:00',
-        name: 'Человек паук',
-        genre: `${genre[0]}, ${genre[1]}, ${genre[2]}`
-    },
-    {
-        start: '12:00',
-        name: 'Собачья жизнь 2',
-        genre: `${genre[0]}, ${genre[4]}, ${genre[5]}`
-    },
-    {
-        start: '14:00',
-        name: 'История игрушек 4',
-        genre: `${genre[6]}, ${genre[3]}, ${genre[5]}`
-    },
-    {
-        start: '16:00',
-        name: 'Люди в чернгом: Интернэшнл',
-        genre: `${genre[8]}, ${genre[1]}, ${genre[5]}`
+    463634,
+    1009784,
+    12362,
+    922165,
+    93377,
+    195332
+];
+
+const parseFilm = function (data) {
+    data = data.data;
+    let countries = '';
+    let genres = '';
+    data.countries.forEach(function (item) {
+        countries += `${item.country} `
+    })
+    data.genres.forEach(function (item) {
+        genres += `${item.genre} `
+    })
+    return {
+        name: data.nameRu,
+        country: countries,
+        genre: genres,
+        year: data.year,
+        description: data.description,
+        img: data.posterUrl,
+        link: data.webUrl
     }
-]
-
-for (let i = 0; i < films.length; i++) {
-    const film = films[i];
-    const filmStartId = 'films_start_' + (i + 1);
-    const filmStart = document.getElementById(filmStartId)
-    filmStart.innerHTML = film.start
-
-    const filmNameId = 'films_name_' + (i + 1);
-    const filmName = document.getElementById(filmNameId)
-    filmName.innerHTML = film.name
-
-    const filmGenreId = 'films_genre_' + (i + 1);
-    const filmGenre = document.getElementById(filmGenreId)
-    filmGenre.innerHTML = film.genre
 }
+
+const getFilmById = function (id) {
+    return new Promise(function (resolve, reject) {
+        fetch(`${url}/films/${id}`, {
+            headers: {
+                "X-API-KEY": "540c9d7a-3bcb-498f-a146-bfd5725b50a3"
+            }
+        }).then(response => response.json()).then(resolve);
+    });
+};
+
+
+const generateTableItem = function ({name, genre}) {
+    return `<tr>
+        <td>12.00</td>
+        <td >${name}</a></td>
+        <td>${genre}</td>
+        <td class="left"><img src="img/More icon.png" alt=""></td>
+    </tr>`
+}
+
+
+const genereteFilmItem = function ({
+    name,
+    country,
+    genre,
+    year,
+    description,
+    img,
+    link
+}) {
+    return (`<div class="block5__movie">
+    <div class="block5__relative">
+        <div class="block05__bg">
+            <img src="${img}" class="block5__film_cover">
+        </div>
+        <div class="block5__description">
+            <div class="block5__film">
+                <p>${name}</p>
+            </div>
+            <div class="block5__sep"></div>
+            <div class="block5__text">
+                <p>${description}</p>
+            </div>
+            <div class="block5__icon">
+                <a href="#" target="_blanck"><img src="img/facebook_.png" alt="facebook"></a>
+                <a href="#" target="_blanck"><img src="img/twitter.png" alt="twitter"></a>
+                <a href="#" target="_blanck"><img src="img/behance.png" alt="behance"></a>
+                <a href="#" target="_blanck"><img src="img/dribbble .png" alt="dribbble"></a>
+            </div>
+        </div>
+        </div>
+</div>`)
+};
+
+let element, prepareFilm;
+films.forEach(function (item) {
+    let film = getFilmById(item);
+    film.then(result => {
+        prepareFilm = parseFilm(result);
+        element = genereteFilmItem({...prepareFilm});
+        tableElement = generateTableItem({...prepareFilm});
+        filmsElement.insertAdjacentHTML('beforeEnd', element);
+    });
+});
