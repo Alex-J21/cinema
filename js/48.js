@@ -175,7 +175,7 @@ const film = {
             <td>
                 <input type="checkbox" class="block03__checkbox" id="block03__checkbox1">
                 <label for="block03__checkbox1">
-                    <i class="icon icon-check" title="check"></i>
+                  <i class="icon icon-check" title="check"></i>
                 </label>
             </td>
             <td id="start_film_${1}">${filmStart}</td>
@@ -200,9 +200,9 @@ const film = {
                 <div class="block5__description">
                 <div class="block5__film" >${filmName}</div>
                     <div class="block5__sep"></div>
-                    <div class="block5__text">${filmDescription}</div>
+                    <div class="block05__text3">${filmDescription}</div>
                     <div class="block5__icon">
-                        <a href="${filmFb}" target="_blank"><i class="icon icon-facebook" title="facebook"></i></a>
+                    <a href="${filmFb}" target="_blank"><i class="icon icon-facebook" title="facebook"></i></a>
                         <a href="${filmTw}" target="_blank"><i class="icon icon-twitter" title="twitter"></i></a>
                         <a href="${filmBh}"><i class="icon icon-camera" title="camera"></i></a>
                     </div>

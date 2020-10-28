@@ -33,7 +33,7 @@ const parseFilm = function (data) {
 }
 
 const getFilmById = function (id) {
-    return new Promise(function (resolve, reject) {
+    return new Promise(function (resolve) {
         fetch(`${url}/films/${id}`, {
             headers: {
                 "X-API-KEY": "540c9d7a-3bcb-498f-a146-bfd5725b50a3"
@@ -42,16 +42,35 @@ const getFilmById = function (id) {
     });
 };
 
-
 const generateTableItem = function ({name, genre}) {
-    return `<tr>
-        <td>12.00</td>
-        <td >${name}</a></td>
-        <td>${genre}</td>
-        <td class="left"><img src="img/More icon.png" alt=""></td>
-    </tr>`
+    function getRandomNumber(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    let time1, time2, time3, time4;
+    // 0 -- 0 - 9
+    // 1 -- 0 - 9
+    // 2 -- 0 - 3
+    time1 = getRandomNumber(0, 2);
+    time3 = getRandomNumber(0, 5);
+    time4 = getRandomNumber(0, 9)
+    
+    switch (time1){ 
+        case 0:
+        case 1:
+            time2 = getRandomNumber(0, 9);
+        default:
+            time2 = getRandomNumber(0, 3);
 }
 
+const time= `${time1}${time1} : ${time3}${time4}`
+    return `<tr>
+                <td>${time}</td>
+                <td >${name}</a></td>
+                <td>${genre}</td>
+            </tr>`
+}
 
 const genereteFilmItem = function ({
     name,
@@ -63,27 +82,27 @@ const genereteFilmItem = function ({
     link
 }) {
     return (`<div class="block5__movie">
-    <div class="block5__relative">
-        <div class="block05__bg">
-            <img src="${img}" class="block5__film_cover">
-        </div>
-        <div class="block5__description">
-            <div class="block5__film">
-                <p>${name}</p>
-            </div>
-            <div class="block5__sep"></div>
-            <div class="block5__text">
-                <p>${description}</p>
-            </div>
-            <div class="block5__icon">
-                <a href="#" target="_blanck"><img src="img/facebook_.png" alt="facebook"></a>
-                <a href="#" target="_blanck"><img src="img/twitter.png" alt="twitter"></a>
-                <a href="#" target="_blanck"><img src="img/behance.png" alt="behance"></a>
-                <a href="#" target="_blanck"><img src="img/dribbble .png" alt="dribbble"></a>
-            </div>
-        </div>
-        </div>
-</div>`)
+                <div class="block5__relative">
+                    <div class="block05__bg">
+                        <img src="${img}" class="block5__film_cover">
+                    </div>
+                    <div class="block5__description">
+                        <div class="block5__film">
+                            <p>${name}</p>
+                        </div>
+                        <div class="block5__sep"></div>
+                        <div class="block5__text">
+                            <p>${description}</p>
+                        </div>
+                        <div class="block5__icon">
+                            <a href="#" target="_blanck"><img src="img/facebook_.png" alt="facebook"></a>
+                            <a href="#" target="_blanck"><img src="img/twitter.png" alt="twitter"></a>
+                            <a href="#" target="_blanck"><img src="img/behance.png" alt="behance"></a>
+                            <a href="#" target="_blanck"><img src="img/dribbble .png" alt="dribbble"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>`)
 };
 
 let element, prepareFilm;
@@ -94,5 +113,6 @@ films.forEach(function (item) {
         element = genereteFilmItem({...prepareFilm});
         tableElement = generateTableItem({...prepareFilm});
         filmsElement.insertAdjacentHTML('beforeEnd', element);
+        //tableFilmsElement.insertAdjacentHTML( tableElement)
     });
 });
