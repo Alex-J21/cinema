@@ -1,6 +1,6 @@
 const url = 'https://kinopoiskapiunofficial.tech/api/v2.1';
 const filmsElement = document.getElementsByClassName('block5__table')[0];
-const tableFilmsElement = document.getElementsByClassName('movie-list__table')[0];
+const tableFilmsElement = document.getElementById('filmsHire');
 
 const films = [
     463634,
@@ -62,15 +62,19 @@ const generateTableItem = function ({name, genre}) {
             time2 = getRandomNumber(0, 9);
         default:
             time2 = getRandomNumber(0, 3);
-}
-
-const time= `${time1}${time1} : ${time3}${time4}`
-    return `<tr>
+    }
+    const time= `${time1}${time1} : ${time3}${time4}`
+    return `<tr class = "movie-row">
+                <td>
+                    <input type="checkbox" class="block03__checkbox" id="block03__checkbox1">
+                        <label for="block03__checkbox1">
+                        <i class="icon icon-check" title="check"></i>
+                </td>
                 <td>${time}</td>
-                <td >${name}</a></td>
+                <td>${name}</a></td>
                 <td>${genre}</td>
             </tr>`
-}
+};
 
 const genereteFilmItem = function ({
     name,
@@ -113,6 +117,6 @@ films.forEach(function (item) {
         element = genereteFilmItem({...prepareFilm});
         tableElement = generateTableItem({...prepareFilm});
         filmsElement.insertAdjacentHTML('beforeEnd', element);
-        //tableFilmsElement.insertAdjacentHTML( tableElement)
+        tableFilmsElement.insertAdjacentHTML('beforeEnd', tableElement);
     });
 });

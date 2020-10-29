@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <!---НАВИГАЦИЯ--->
     <div class="block1">
         <div class="container">
@@ -149,7 +148,7 @@
         <div class="block3__movie-list">
             <h3 class="movie-list__header">Выберите фильм</h3>
             <div>
-                <table class="movie-list__table" >
+                <table class="movie-list__table">
                     <thead>
                         <tr class="movie-table_head">
                             <th></th>
@@ -182,7 +181,7 @@
     <div class="block4">
         <div class="container">
             <div class="block4__img">
-                <img src="img/b4_img.jpg" title="подарок">
+                <img src="img/b4_img.jpg" title="подарок" style="width: 25vw;" >
             </div>
             <div class="block4__block">
                 <div class="block4__head">
@@ -239,7 +238,7 @@
                 suscipit!
             </p>
         </div>
-        <div class="block5__table" id="filmsNew">
+        <div class="block5__table owl-carousel" id="filmsNew">
         </div>
     </div>
     <!-- КАРТА -->
@@ -291,14 +290,14 @@
             </div>
         </form>
     </div>
-    </div>
     <div id="output"></div>
     <!-- СКРИПТЫ -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/plagin/owlcarousel/js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- <script src="js/plagin/owlcarousel/js/ww.js"></script> -->
     <script src="js/films.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/plagin/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="js/ajax.js"></script>
     <!-- <script src="js/48.js"></script> -->
 </body>
 

@@ -1,8 +1,11 @@
+html {
+    font-size: 1.46vw;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     min-width: 16rem;
     max-width: 1920px;
-    min-width: 320px;
 }
 
 
@@ -165,9 +168,7 @@ a {
 .padding-text{
     padding: 0 0 0.75rem;
 }
-html{
-    font-size: 1rem;
-}
+
 
 /*Первый блок*/
 .block1 {
@@ -406,7 +407,7 @@ table.movie-list__table tfoot td {
 
 .block4 {
     background: url("../img/b4_bg.jpg") no-repeat top center / cover;
-    min-height: 50vw;
+    min-height: 60vw;
     position: relative;
     overflow: hidden;
     margin-bottom: 6.5rem;
@@ -564,7 +565,7 @@ table.movie-list__table tfoot td {
 
 }
 .block7__block_icon{
-    padding: 6.4rem 0px 0px 1.1rem;
+    padding: 7.4rem 0px 0px 0;
     width: 16.7rem;
     margin: 0 auto;
     box-sizing: border-box;
